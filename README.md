@@ -105,6 +105,12 @@ Student-Performance-Analysis/
 3. Open the Jupyter Notebook.
 4. Load the dataset.
 5. Run the notebook cells sequentially.
+   
+## Business Insights
+
+For detailed findings and recommendations, see:
+
+[View Business Insights](business_insights.md)
 
 ## Author
 
