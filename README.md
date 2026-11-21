@@ -1,19 +1,41 @@
-# Student Performance Analysis Using Python
+# Student Performance and Academic Insights Analysis
 
 ## Project Overview
 
-This project focuses on analysing student academic performance using Python. It explores how factors such as gender, ethnicity, parental education, test preparation, parental marital status, sports participation and weekly study hours relate to students' academic scores.
+This project focuses on analysing student academic performance using Python. The objective is to understand how different factors, such as gender, parental education, test preparation and weekly study hours, relate to students' academic scores.
 
-The project includes data cleaning, data preprocessing, exploratory data analysis (EDA) and data visualisation.
+The analysis uses approximately 10,000 student records to identify patterns and generate meaningful insights.
 
-## Dataset Information
+## Business Objectives
 
-- Dataset Name: Student Performance Dataset
-- Total Records: 10,000
-- Total Columns: 15
-- File Format: CSV
+- Analyse student performance across different subjects.
+- Understand academic performance based on gender.
+- Explore the relationship between parental education and student scores.
+- Evaluate the impact of test preparation on academic performance.
+- Analyse the relationship between weekly study hours and academic results.
 
-Note: The 10,000-row dataset included in this repository is synthetic data created for analysis and practice.
+## Dataset Description
+
+The dataset contains student information and academic scores.
+
+Important columns include:
+
+| Column | Description |
+|---|---|
+| Gender | Student gender |
+| EthnicGroup | Student ethnic group |
+| ParentEduc | Parent education level |
+| LunchType | Type of lunch |
+| TestPrep | Test preparation course |
+| ParentMaritalStatus | Parent marital status |
+| PracticeSport | Sports participation |
+| IsFirstChild | First-child status |
+| NrSiblings | Number of siblings |
+| TransportMeans | Transportation method |
+| WklyStudyHours | Weekly study hours |
+| MathScore | Mathematics marks |
+| ReadingScore | Reading marks |
+| WritingScore | Writing marks |
 
 ## Tools and Technologies
 
@@ -22,67 +44,70 @@ Note: The 10,000-row dataset included in this repository is synthetic data creat
 - NumPy
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
+- Google Colab / Jupyter Notebook
 
-## Data Cleaning and Preprocessing
+## Data Cleaning
 
-The following activities were performed:
+The following data cleaning activities were performed:
 
-1. Imported the dataset using Pandas.
-2. Checked dataset columns and structure.
-3. Removed an unnecessary column.
-4. Checked missing values.
-5. Handled missing values in categorical columns.
-6. Handled missing values in weekly study hours.
-7. Converted the number of siblings column into integer format.
-8. Used forward fill for missing transport values.
-9. Created a Student ID column.
-10. Renamed columns into a consistent format.
-11. Standardised categorical values.
-12. Converted categorical columns into category data types.
-13. Checked data types and remaining missing values.
-14. Created total_score and avarage_score columns.
+1. Dataset inspection.
+2. Identification of missing values.
+3. Duplicate record checking.
+4. Handling missing values where required.
+5. Data type verification.
+6. Feature engineering.
+7. Final dataset validation.
 
-## Business Questions
+## Exploratory Data Analysis
 
-The following questions were explored:
+The project explores:
 
-1. What is the average academic score of male and female students?
-2. How does student performance vary across different ethnic groups?
-3. How does parents' education level relate to students' academic performance?
-4. Do students who completed test preparation have different average scores?
-5. Does parents' marital status relate to students' academic performance?
-6. Do students who participate in sports have different average scores?
-7. How do weekly study hours relate to students' academic performance?
-8. What is the overall average academic score of students?
-9. How do Math, Reading and Writing scores vary across gender and ethnic groups?
+- Gender-wise academic performance.
+- Subject-wise score comparison.
+- Parent education and student performance.
+- Test preparation and academic results.
+- Weekly study hours and student performance.
 
-## Data Analysis and Visualisation
+## Key Performance Indicators
 
-The project includes:
+- Average Mathematics Score.
+- Average Reading Score.
+- Average Writing Score.
+- Overall Average Score.
+- Student Performance Categories.
 
-- Gender-wise average score analysis.
-- Ethnic group performance analysis.
-- Parent education and student performance analysis.
-- Test preparation analysis.
-- Parent marital status analysis.
-- Sports participation analysis.
-- Weekly study hours analysis.
-- Subject-wise score analysis using a pivot table and heatmap.
+## Key Findings
 
-## Project Files
+This section presents the actual findings obtained from the Python analysis.
 
-- student.ipynb – Python notebook containing data cleaning, analysis and visualisation.
-- student_performance_raw_10000.csv – Raw dataset used for analysis.
-- student_dashboard.png – Student performance dashboard.
+## Business Recommendations
 
-## Key Python Libraries
+Recommendations will be based on the patterns identified in the dataset.
 
-- Pandas – Data manipulation and analysis.
-- NumPy – Numerical operations.
-- Matplotlib – Data visualisation.
-- Seaborn – Statistical data visualisation.
+Potential areas of focus include academic support, test preparation and study habits.
+
+## Project Structure
+
+```text
+Student-Performance-Analysis/
+│
+├── README.md
+├── data/
+├── notebooks/
+├── screenshots/
+└── requirements.txt
+```
+
+## How to Run
+
+1. Clone or download this repository.
+2. Install the required Python libraries.
+3. Open the Jupyter Notebook.
+4. Load the dataset.
+5. Run the notebook cells sequentially.
 
 ## Author
 
 Chaitrali Gundolkar
+
+Aspiring Data Analyst | Python | SQL | Power BI | Excel
